@@ -394,7 +394,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "gradiochat", specifier = ">=0.2.4" }]
+requires-dist = [{ name = "gradiochat", specifier = ">=0.2.5" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
@@ -649,7 +649,7 @@ wheels = [
 
 [[package]]
 name = "gradiochat"
-version = "0.2.4"
+version = "0.2.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastcore" },
@@ -660,9 +660,9 @@ dependencies = [
     { name = "requests" },
     { name = "together" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b4/77/2ddc6a7d0ced6fb8f91e121eac4a7876c485bc2cacb015c8abdc030d8e0f/gradiochat-0.2.4.tar.gz", hash = "sha256:76ef6066a778d46488fe9894ae3ecfe5e4ff80617236f84edad36d2755821ae6", size = 164026 }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/7d/65233a060abe115066cbfd965017729d1e4102e60dfccd35d00f69349d69/gradiochat-0.2.5.tar.gz", hash = "sha256:405ae91ff688b06c480557c3d7ee141a20af1c0238225694434e1b5c918134b7", size = 164015 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/1b/e7a34e2c9367348bf34933552ace5f272abff3f9b10af1bf17a11ce5863c/gradiochat-0.2.4-py3-none-any.whl", hash = "sha256:ae539138abfe7d7a70a95764418ffe7cec828e387da373515ecf17fe17e6700c", size = 18658 },
+    { url = "https://files.pythonhosted.org/packages/6e/4c/e387edcf98ddb1fb0e142b4e5ea7d33f2a3e3da660e55a1325186cd70a17/gradiochat-0.2.5-py3-none-any.whl", hash = "sha256:ab2eb59d2bcd9dad6475ddfd6a83ee223c6c4305b2b0ba822cb14433c356336d", size = 16684 },
 ]
 
 [[package]]
