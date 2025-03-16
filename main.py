@@ -10,9 +10,9 @@ with open("system.md", "r", encoding="utf-8") as f:
         system_prompt = f.read()
 
 modelconfig = ModelConfig(
-    model_name="Qwen/Qwen2.5-72B-Instruct",
-    provider="huggingface",
-    api_key_env_var="HF_API_KEY"
+    model_name="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+    provider="togetherai",
+    api_key_env_var="TG_API_KEY"
 )
 
 user_story_config = ChatAppConfig(
@@ -20,12 +20,13 @@ user_story_config = ChatAppConfig(
     description="Een chat applicatie die je helpt bij het schrijven van een user story.",
     system_prompt=system_prompt,
     model=modelconfig,
-    theme=themeWDODelta
+    theme=themeWDODelta,
+    logo_path="wdod_logo.svg"
 )
 
 def main():
     app = create_chat_app(user_story_config)
-    app.build_interface().launch()
+    app.build_interface().launch(pwa=True, favicon_path="wdod_logo.svg")
 
 if __name__ == "__main__":
     main()
